@@ -1,0 +1,129 @@
+.footer__small {
+    padding: 32px 0;
+    text-align: center;
+    background-color: #F5F7FA;
+
+    @media screen and (max-width: 1199px) {
+        padding: 20px 0;
+    }
+}
+
+.footer__small-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *:first-child {
+        width: 890px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        & > *:first-child {
+            width: auto;
+        }
+    }
+}
+
+.footer__big {
+    padding: 64px 0;
+    background-color: #263238;
+
+    @media screen and (max-width: 1199px) {
+        padding: 40px 0;
+    }
+}
+
+.footer__big-wrapper {
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 350px 635px;
+    grid-column-gap: 125px;
+
+    @media screen and (max-width: 1199px) {
+        grid-template-columns:  100%;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+        justify-items: center;
+    }
+}
+
+.footer__company-info {
+    .logo {
+        margin-bottom: 40px;
+    }
+
+    .text-description > * + * {
+        margin-top: 8px;
+    }
+
+    & > *:nth-last-child(2) {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.footer__company-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 160px)) 255px;
+    gap: 30px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 255px;
+        justify-items: center;
+        text-align: center;
+    }
+
+}
+
+.company-links__list li + li  {
+    margin-top: 12px;
+}
+
+.company-links__wrapper, .company-form {
+    & > *:first-child {
+        margin-bottom: 24px;
+        color: #fff;
+    }
+}
+
+.company-links__submit {
+    position: relative;
+    input {
+        padding: 0px 35px 0px 12px;
+        width: 255px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 8px;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #D9DBE1;
+        transition: background-color 0.2s ease;
+
+        &::placeholder {
+            color: #D9DBE1; 
+        }
+
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .button-send {
+        position: absolute;
+        bottom: 0;
+        right: 11px;
+        transform: translateY(-55%);
+
+        &:active {
+            right: 9px;
+        }
+    }
+
+}
