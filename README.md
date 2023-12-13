@@ -5,7 +5,7 @@
 + SCSS
 + JavaScript
 + jQuery
-## Что внутри:
+## Что реализовано:
 + Адаптация под десктоп, планшеты, смартфоны (принцип desktop-first)
 + Мобильная навигация
 + Карусель ([Owl.js](https://owlcarousel2.github.io/OwlCarousel2/))
